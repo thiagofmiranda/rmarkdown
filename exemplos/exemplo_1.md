@@ -3,13 +3,11 @@ exemplo\_1
 Thiago Miranda
 26/06/2021
 
-R Markdown
-----------
+## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax
 for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see
-<a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.
+using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that
 includes both content as well as the output of any embedded R code
@@ -27,8 +25,7 @@ summary(cars)
     ##  3rd Qu.:19.0   3rd Qu.: 56.00  
     ##  Max.   :25.0   Max.   :120.00
 
-Including Plots
----------------
+## Including Plots
 
 You can also embed plots, for example:
 
