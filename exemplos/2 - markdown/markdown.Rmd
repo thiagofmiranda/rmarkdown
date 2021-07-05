@@ -1,0 +1,87 @@
+---
+title: "markdown"
+author: "Thiago Miranda"
+date: "05/07/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ênfase
+*italic*   **bold**
+
+_italic_   __bold__
+
+# Cabeçalhos
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+# Listas
+## Não ordenada
+* Item 1
+* Item 2
+    + Item 2a
+    + Item 2b
+
+## Ordenada:
+1. Item 1
+2. Item 2
+3. Item 3
+    + Item 3a
+    + Item 3b
+
+# Quebra de linha manual:
+Roses are red,  
+Violets are blue.
+
+Roses are red,
+Violets are blue.
+
+
+# Links
+http://example.com
+
+[no texto](http://example.com)
+
+# Citações:
+Uma vez um amigo me disse:
+
+> Estatística é a arte 
+> de fazer os números falarem.
+
+# Equações em LaTeX
+Aqui temos um equação inline: $f(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\left( -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{\!2}\,\right)$
+
+$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\left( -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{\!2}\,\right) $$
+
+# Linhas Horizontais e Quebras de Páginas:
+
+Linha:
+
+******
+
+Quebra:
+------
+Outra página
+
+
+# Tabelas:
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+
+
+
+
+
+
+

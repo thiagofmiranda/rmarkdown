@@ -1,0 +1,72 @@
+---
+title: "tabelas e imagens"
+author: "Thiago Miranda"
+date: "05/07/2021"
+output: html_document
+---
+
+# Imagens
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r ,echo=FALSE}
+knitr::include_graphics("../../apresentacao/imagens/rmarkdownflow.png")
+```
+
+```{r ,echo=FALSE, out.width="90%"}
+knitr::include_graphics("../../apresentacao/imagens/rmarkdownflow.png")
+```
+
+```{r ,echo=FALSE, fig.align="center"}
+knitr::include_graphics("../../apresentacao/imagens/rmarkdownflow.png")
+```
+
+```{r ,echo=FALSE, fig.align="center"}
+knitr::include_graphics("../../apresentacao/imagens/rmarkdownflow.png")
+```
+
+------
+
+# Tabelas
+
+Output comum:
+
+```{r ,echo=FALSE}
+diamonds_10 <- diamonds %>% 
+  slice(1:10)
+diamonds_10
+```
+
+Output do knit:
+
+```{r ,echo=FALSE}
+knitr::kable(diamonds_10)
+
+# Output do knit align(left, center, right):
+knitr::kable(diamonds_10, align = "llllllllll")
+
+knitr::kable(diamonds_10, caption = "Que tabela daora <3")
+```
+
+```{r ,echo=FALSE}
+library(kableExtra)
+
+diamonds_10 %>%
+  kbl() %>% 
+  kable_styling(latex_options = "striped")
+
+diamonds_10 %>%
+  kbl() %>%
+  kable_classic_2(full_width = F)
+
+diamonds_10 %>%
+  kbl() %>%
+  kable_material_dark()
+
+
+```
+
+<https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html>

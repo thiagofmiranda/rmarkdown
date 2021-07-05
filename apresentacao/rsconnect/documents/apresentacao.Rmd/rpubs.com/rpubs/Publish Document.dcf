@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/788287/94fa5c81c5964a7aabb994b65bf16c22
+bundleId: https://api.rpubs.com/api/v1/document/788287/94fa5c81c5964a7aabb994b65bf16c22
+url: http://rpubs.com/ThiagoFM/788287
+when: 1625510537.66908
+lastSyncTime: 1625510537.66908

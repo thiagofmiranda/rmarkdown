@@ -1,0 +1,66 @@
+---
+title: "chunks"
+author: "Thiago Miranda"
+date: "05/07/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chunks
+
+Chunks mais comuns:
+
+eval = F para não rodar o código, apenas mostrar:
+
+```{r chunk_eval, eval=F}
+x <- rnorm(100)
+```
+
+```{r chunk_eval_teste}
+exists("x")
+```
+
+echo = FALSE para não mostrar o código:
+
+```{r chunk_echo, echo = FALSE}
+y <- rnorm(100)
+```
+
+```{r chunk_echo_teste}
+hist(y)
+```
+
+results = "hide" para não mostrar as saídas:
+```{r chunk_hide, results = "hide"}
+rnorm(100)
+```
+
+warning = FALSE e message = FALSE, para não mostrar as mensagens de aviso:
+```{r chunk_message, warning = FALSE, message = FALSE}
+message("erro")
+warning("erro")
+```
+
+```{r chunk_message_teste}
+message("erro")
+warning("erro")
+```
+
+cache = FALSE, para não armazenar o resultado da execução:
+```{r chunk_cache, cache = FALSE}
+z <- rnorm(100)
+```
+
+```{r chunk_cache_teste}
+exists("z")
+```
+
+
+
+
+
+
+
